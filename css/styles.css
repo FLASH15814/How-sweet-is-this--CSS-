@@ -55,6 +55,7 @@ form{
     margin-left : 450px;
     box-shadow: rgba(176, 159, 130, 0.24) 0px 3px 8px;
     border-radius :4px;
+    padding-top:10px;
 }
 h1{
     padding-top:30px;
@@ -62,6 +63,24 @@ h1{
     margin-left : 410px;
     font-family: 'Roboto Condensed';
     font-size: 26px;
+}
+
+h1::after{
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background:#fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+h1:hover::after{
+    width : 30%;
+    left :0;
 }
 
 img.image-1{
@@ -121,6 +140,10 @@ footer p{
     margin-top:50px;
     margin-left : 750px;
     padding-bottom :20px;
+    
+}
+footer p:not(.separate p){
+    text-decoration: overline;
 }
 footer p img{
     position: absolute;
