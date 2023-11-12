@@ -64,8 +64,10 @@ h1{
     font-family: 'Roboto Condensed';
     font-size: 26px;
 }
-
-h1::after{
+h1:hover:not(footer h1){
+    color:#192537;
+}
+h1::after:not(footer h1){
     background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -73,12 +75,12 @@ h1::after{
   height: 2px;
   left: 50%;
   position: relative;
-  background:#fff;
+  background:#192537;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 
-h1:hover::after{
+h1:hover::after:not(footer h1){
     width : 30%;
     left :0;
 }
@@ -98,7 +100,9 @@ p{
     font-size:20px;
     padding-right:10px;
 }
-
+.word:hover{
+    color:black;
+}
 footer{
     background-color:#B09F7F;
     font-size : 22px;
@@ -135,6 +139,9 @@ footer h2{
     margin-top : 60px;
     font-family: 'Roboto Condensed';
     color: white;
+}
+footer h2{
+
 }
 footer p{
     margin-top:50px;

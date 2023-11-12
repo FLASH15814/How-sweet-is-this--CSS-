@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Candy</title>
-    <link rel="favicon" href = "images/logo.png"/>
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="icon" href = "images/logo2.png">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
@@ -21,13 +21,12 @@
             Contact us
         </li>
         <img src="svg/logo-svg.svg" alt="logo" >
-        <li>
-    </li>
+        
     </nav>
     <form>
         <h1>JOLLY RANCHER</h1>
         <img class="image-1" src="images/Logo.png" alt = "candy" height=1000px width=1000px>
-        <p>
+        <p id="myP">
             Jolly Rancher's original flavors were watermelon, apple, and fire stix. They soon introduced cherry, orange tangerine, lemon, grape, peach, and sour apple. Eventually, blue raspberry replaced lemon. Current flavors include cherry, blue raspberry, grape, green apple, and watermelon. There are also sour, cinnamon, and smoothie varieties. In 2013, lemon was reintroduced in an all-lemon bag. In 2015, Jolly Rancher offered a "Fruity Bash" variety bag which includes strawberry, mountain berry, lemon, orange, and pineapple. In 2017, Jolly Rancher offered a "Hotties" variety bag which includes watermelon & cayenne pepper, blue raspberry & sriracha, cherry & habanero, and green apple & ginger. In 2020, Jolly Rancher offered a tropical variety bag featuring fruit punch, golden pineapple, lime, and mango flavors. They also offer a "red" bag, which included cherry, watermelon, strawberry and fruit punch. As of 2012, the passion mix, which included the peach flavor, and the wild berry mix were discontinued by The Hershey Company.[12] The Hotties mix has been discontinued as of 2019. In 2020, the peach flavor has been brought back in an "all-peach" bag, and replaced the mountain berry flavor in the Fruity Bash bag.
         </p>
     </form>
@@ -54,9 +53,16 @@
         </h2>
         <input type="text" name="Name" />
         <p><img src="svg/logo-svg.svg">Think Big Inc. by Ranshiv Kumar</p>
-        
     </footer>
-    
+    <script>
+        var p = document.getElementById("myP");
+        var words = p.innerHTML.split(" ");
+        var i;
+        for (i = 0; i < words.length; i++) {
+            words[i] = "<span class='word'>" + words[i] + "</span>";
+        }
+        p.innerHTML = words.join(" ");
+        </script>
     <script src="https://kit.fontawesome.com/2133e5dd52.js" crossorigin="anonymous"></script>
 </body>
 </html>
