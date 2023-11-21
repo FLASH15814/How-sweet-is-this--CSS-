@@ -19,12 +19,12 @@ nav li{
     padding-left:150px;
     list-style: none;
     color: #B09F7F;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
 }
 nav li::after{
     background: none repeat scroll 0 0 transparent;
@@ -47,10 +47,19 @@ nav img{
     height :100px;
     margin-left: 1030px;
 }
+nav img.bag{
+    position: absolute;
+    margin-left:1550px;
+    height : 80px; 
+    width: 80px;
+}
+nav img.bag:hover{
+    opacity: 0.6;
+}
 form{
     background-color: #B09F7F;
     width : 1000px;
-    height :1000px;
+    height :1120px;
     color:rgb(255, 255, 255);
     margin-left : 450px;
     box-shadow: rgba(176, 159, 130, 0.24) 0px 3px 8px;
@@ -100,12 +109,15 @@ p{
     font-size:20px;
     padding-right:10px;
 }
+p.candyP{
+    text-align:center;
+}
 .word:hover{
     color:black;
 }
 form button{
     height:45px;
-    width:100px;
+    width:130px;
     border:none;
     margin-left:450px;
     background-color: #192537;
@@ -116,6 +128,19 @@ form button a{
     color:white;
     text-decoration: none;
     font-size:22px;
+    font-family: 'Recursive', sans-serif;
+}
+form button a:hover{
+    color :#B09F7F;
+}
+.heading-1 h1{
+    font-size:40px;
+    position:relative;
+    margin-left:100px;
+    color:#B09F7F;
+}
+.heading-1 h1:hover{
+    color:aliceblue;
 }
 footer{
     background-color:#B09F7F;
@@ -194,43 +219,74 @@ footer p img{
     padding:50px 50px 50px 50px;
     background-color:#B09F7F;
     border-radius:5px;
+    height: 474px;
 }
 .container-1{
     margin-left:100px;
 }
 
-.container-1 img,.container-2 img{
-    margin-left:70px;
+.container-1 img,.container-2 img,.container-3 img{
+    margin-left:80px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     height:200px;
     width:200px;
     border-radius : 5px;
+    background-color: white;
 }
-.container-1 button,.container-2 button{
+.container-1 img:hover, .container-2 img:hover , .container-3 img:hover{
+    display: inline-block;
+    background-color: rgb(134, 135, 136);
+    height: 200px;
+    width: 200px;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 80px;
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    opacity: .7;
+}
+@keyframes skew {
+    0% {
+      transform: skewX(20deg);
+    }
+    100% {
+      transform: skewX(-20deg);
+    }
+  }
+.container-1 button,.container-2 button,.container-3 button{
+    position: absolute;
     height:50px;
     width :100px;
-    margin-left:120px;
+    margin-top:30px;
+    margin-left:130px;
     border-radius : 5px;
     border:none;
+    text-align: center;
     box-shadow: 0 19px 38px rgba(25, 37, 55, 0.3), 0 15px 12px rgba(176, 159, 127, 0.22);
 }
-.container-1 button a,.container-2 button a{
+.container-1 button{
+    margin-top:4px;
+}
+.container-1 button a,.container-2 button a,.container-3 button a{
     font-family: 'Recursive', sans-serif;
     text-decoration:none;
     font-size:20px;
     color:#192537;
     font-weight: 700;
 }
-.container-1 button a:hover,.container-2 button a:hover{
+.container-1 button a:hover,.container-2 button a:hover,.container-3 button a:hover{
     color:#B09F7F;
     font-weight: 1000;
 }
-.container-1 h2,.container-2 h2{
+.container-1 h2,.container-2 h2,.container-3 h2{
     padding-top:20px;
     font-family: 'Recursive', sans-serif;
-    margin-left:70px;
+    text-align: center;
 }
-.container-1 p{
+.container-1 p,.container-2 p,.container-3 p{
     /* margin-left:10px; */
     text-align: center;
 }
@@ -241,4 +297,71 @@ footer p img{
     background-color:#B09F7F;
     border-radius:5px;
     margin-left:700px;
+    height: 474px;
+}
+.container-3{
+    position: absolute;
+    margin-top:50px;
+    padding:50px 50px 50px 50px;
+    background-color:#B09F7F;
+    border-radius:5px;
+    margin-left:1300px;
+    height: 474px;
+}
+
+form img{
+    margin-top: 20px;
+    padding:10px 10px 10px 10px ;
+    background-color: rgb(255, 255, 255);
+    border-radius:5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-bottom:10px;
+}
+form img:hover{
+    transform:rotate(3deg);
+    transition: transform 1.5s;
+
+}
+body h3{
+    font-family: 'Roboto Condensed';
+    position: absolute;
+    margin-left:100px;
+    margin-top:700px;
+    font-size:50px;
+    color:#B09F7F;
+}
+body h3:hover{
+    color:aliceblue;
+}
+.nutritional-val{
+    margin-left:70px;
+    margin-top:850px;
+}
+.nutritional-val p{
+    border-bottom-style: outset;
+    border-width:1px;
+    margin-right:1050px;
+    border-color:#ffffff;
+    margin-left:10px;
+}
+.val{
+    position: absolute;
+    margin-top:-443px;
+    margin-left:600px;
+    
+}
+.val p{
+    border: none;
+}
+.nutritional-val h1{
+    color:whitesmoke;
+    margin-left:200px;
+    margin-top:-50px;
+    padding-bottom:10px;
+}
+.nutritional-val h1:hover{
+    color:white;
+}
+footer{
+    margin-top:100px;
 }
