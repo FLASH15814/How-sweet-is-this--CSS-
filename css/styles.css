@@ -103,10 +103,24 @@ p{
 .word:hover{
     color:black;
 }
+form button{
+    height:45px;
+    width:100px;
+    border:none;
+    margin-left:450px;
+    background-color: #192537;
+    border-radius:5px;
+    box-shadow: rgba(25, 37, 55, 0.24) 0px 3px 8px;
+}
+form button a{
+    color:white;
+    text-decoration: none;
+    font-size:22px;
+}
 footer{
     background-color:#B09F7F;
     font-size : 22px;
-    margin-top:100px;
+    margin-top:800px;
     padding-top:10px;
 }
 footer h1{
@@ -140,9 +154,6 @@ footer h2{
     font-family: 'Roboto Condensed';
     color: white;
 }
-footer h2{
-
-}
 footer p{
     margin-top:50px;
     margin-left : 750px;
@@ -175,4 +186,59 @@ footer p img{
 }
 .separate-2{
     margin-top:80px;
+}
+.container-1{
+    position: absolute;
+    margin-top:50px;
+    margin-left:50px;
+    padding:50px 50px 50px 50px;
+    background-color:#B09F7F;
+    border-radius:5px;
+}
+.container-1{
+    margin-left:100px;
+}
+
+.container-1 img,.container-2 img{
+    margin-left:70px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    height:200px;
+    width:200px;
+    border-radius : 5px;
+}
+.container-1 button,.container-2 button{
+    height:50px;
+    width :100px;
+    margin-left:120px;
+    border-radius : 5px;
+    border:none;
+    box-shadow: 0 19px 38px rgba(25, 37, 55, 0.3), 0 15px 12px rgba(176, 159, 127, 0.22);
+}
+.container-1 button a,.container-2 button a{
+    font-family: 'Recursive', sans-serif;
+    text-decoration:none;
+    font-size:20px;
+    color:#192537;
+    font-weight: 700;
+}
+.container-1 button a:hover,.container-2 button a:hover{
+    color:#B09F7F;
+    font-weight: 1000;
+}
+.container-1 h2,.container-2 h2{
+    padding-top:20px;
+    font-family: 'Recursive', sans-serif;
+    margin-left:70px;
+}
+.container-1 p{
+    /* margin-left:10px; */
+    text-align: center;
+}
+.container-2{
+    position: absolute;
+    margin-top:50px;
+    padding:50px 50px 50px 50px;
+    background-color:#B09F7F;
+    border-radius:5px;
+    margin-left:700px;
 }
